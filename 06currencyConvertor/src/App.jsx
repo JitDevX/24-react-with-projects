@@ -22,7 +22,7 @@ function App() {
   }
   
   const convert = () => {
-    setConvertedAmount(Math.floor(amount * currencyInfo[to]))
+    setConvertedAmount(Math.round(amount * currencyInfo[to]))
   }
 
   return (
