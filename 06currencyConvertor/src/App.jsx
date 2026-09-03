@@ -3,6 +3,7 @@ import {InputBox} from './components'
 import useCurrencyInfo from './hooks/useCurrencyInfo'
 
 
+
 function App() {
 
   const [amount, setAmount] = useState(0)
@@ -24,6 +25,7 @@ function App() {
   const convert = () => {
     setConvertedAmount(Math.round(amount * currencyInfo[to]))
   }
+  // console.log(currencyInfo);
 
   return (
     <div
